@@ -37,6 +37,13 @@ public class MView extends View {
     public MView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
+        String nameSpace = "http://schemas.android.com/apk/res/org.wong.createview";
+        int switchBackground = attrs.getAttributeResourceValue(nameSpace, "switch_background", -1);
+        int slideBackground = attrs.getAttributeResourceValue(nameSpace, "slide_background", -1);
+        boolean switchState = attrs.getAttributeBooleanValue(nameSpace, "switch_state", false);
+        setSwitchBackgroundResource(switchBackground);
+        setSlideButtonResource(slideBackground);
+        setSwitchState(switchState);
     }
 
     public MView(Context context, AttributeSet attrs, int defStyleAttr) {

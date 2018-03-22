@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:mswitch="http://schemas.android.com/apk/res/org.wong.createview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,6 +9,9 @@
 
     <org.wong.createview.view.MView
         android:id="@+id/mview"
+        mswitch:switch_background="@drawable/switch_background"
+        mswitch:slide_background="@drawable/slide_button"
+        mswitch:switch_state="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true" />

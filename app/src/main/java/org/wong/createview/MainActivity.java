@@ -20,8 +20,6 @@ public class MainActivity extends Activity {
      */
     private void init() {
         MView mView = findViewById(R.id.mview);
-        mView.setSwitchBackgroundResource(R.drawable.switch_background);
-        mView.setSlideButtonResource(R.drawable.slide_button);
         mView.setOnSwitchChangeListener(new MView.OnSwitchChangeListener() {
             @Override
             public void onStateChange(boolean state) {
